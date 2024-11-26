@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ORANGE: #E63B00;
+}
+
+body {
+    font-family: "Inter", serif;
+}
+
+.header-up {
+    padding-right: 5em;
+    background-color: rgb(49, 42, 42, 0.911);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+nav, ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+    background-color: rgba(38, 36, 36, 0.911);
+}
+
+.angle-down {
+    padding: 0 0.1em;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header-logo {
+    width: 43%;
+    padding: 1em 0;
+}
+
+.main-header-link {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.main-header-anchor {
+    font-size: 1.2em;
+    padding-right: 1em;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(38, 36, 36, 0.911);
+    transition: all 0.3s ease-out;
+}
+
+.main-header-anchor:hover {
+    color: darkorange;
+}
+
+.open-account {
+    font-size: 1.2em;
+    padding-right: 1em;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+    background-color: var(--ORANGE);
+    padding: 0.4em 1em;
+    border-radius: 1em;
+    color: white;
+}

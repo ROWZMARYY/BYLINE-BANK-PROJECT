@@ -6,44 +6,603 @@
     <meta name="description" content="">
     <title>Personal, Business & Commercial Banking in Chicago| Byline Bank</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/OIP-removebg-preview.png">
+    <link rel="stylesheet" href="/CSS/MEDIA QUERY/mainresponsive.css">
+    <link rel="icon" href="ASSETS/IMG/OIP-removebg-preview.png">
 </head>
 <body>
     <header>
         <div class="header-up">
             <nav>
                 <ul>
-                 <li title="About Us">About Us</li>
-                 <li title="Insights">Insights</li>
-                 <li title="News">News</li>
-                 <li title="Investors">Investors</li>
-                 <li title="Help & Support">Help & Support</li>
-                 <li title="Locations">Locations</li>
-                 <li><img src="favicons/loginarrow.svg" class="angle-down" alt="">Logins</li>
+                 <li title="About Us" class="header-up-li">About Us</li>
+                 <li title="Insights" class="header-up-li">Insights</li>
+                 <li title="News" class="header-up-li">News</li>
+                 <li title="Investors" class="header-up-li">Investors</li>
+                 <li title="Help & Support" class="header-up-li">Help & Support</li>
+                 <li title="Locations" class="header-up-li">Locations</li>
+                 <li class="dropdown" title="Logins">
+                    <img src="ASSETS/ICONS/loginarrow.svg" class="angle-down" alt="">Logins
+                    <ul class="dropdown-menu">
+                        <h3>Account Logins</h3>
+                        <li><a href="#">Personal Banking</a></li>
+                        <li><a href="#">Business Banking</a></li>
+                        <li><a href="#">Wealth Management</a></li>
+                        <hr>
+                        <li><a href="#">Forgot Login? - Enroll</a></li>
+                    </ul>
+                </li>
                 </ul>
              </nav>
         </div>
 
         <div class="main-header">
             <div class="main-header-logo">
-                <a href="#"><img src="img/logoHeader-BylineBank.svg" alt=""></a>
+                <a href="#"><img src="ASSETS/IMG/logoHeader-BylineBank.svg" alt=""></a>
             </div>
-
+        
             <div class="main-header-link">
                 <div class="main-header-link-child">
-                    <a href="" class="main-header-anchor">Personal</a>
-                    <a href="" class="main-header-anchor">Commercial & Business</a>
-                    <a href="" class="main-header-anchor">Wealth</a>
-                    <a href="" class="open-account">Open an Account</a>
+                    <!-- Personal Link with Dropdown -->
+                    <div class="dropdown">
+                        <a href="#" class="main-header-anchor">Personal</a>
+                        <div class="dropdown-content personal">
+                            <!-- First section with links -->
+                            <div class="dropdown-section left">
+                                <h4>Checking</h4>
+                                <li><a href="">Simple Checking</a></li>
+                                <li><a href="">Prime Life Checking</a></li>
+                                <li><a href=""></a></li>
+                            </div>
+                            <!-- Second section with links -->
+                            <div class="dropdown-section left">
+                                <h4>Savings</h4>
+                                <li><a href="">Money Market Accounts</a></li>
+                                <li><a href="">Certificates Of Deposits(CDs)</a></li>
+                                <li><a href="">Statement Savings Account</a></li>
+                                <li><a href="">Junior Banker Savings Account</a></li>
+                                <li><a href="">Health Savings Account(HSA)</a></li>
+                                <li><a href="">Individual Retirement Accounts(IRAs)</a></li>
+                            </div>
+                            <!-- Third section with links -->
+                            <div class="dropdown-section left">
+                                <h4>Online and Mobile Banking</h4>
+                                <li><a href="">Zelle</a></li>
+                                <li><a href="">Digital Payments</a></li><br>
+
+                                
+                                <h4>Personal Loans</h4>
+                                <li><a href="">Home Equity Lines Of Credit</a></li>
+                                <li><a href="">Mortgages</a></li>
+                                <li><a href="">Personal Installment Loans</a></li>
+                                <li><a href="">Pay Your Loan</a></li>
+                            </div>
+                            <!-- Fourth section with links -->
+                            <div class="dropdown-section">
+                                <h4>Personal Cards</h4>
+                                <li><a href="">Credit Cards</a></li>
+                                <li><a href="">Debit Cards</a></li><br>
+
+                                <h4>Safe Deposit Boxes</h4>
+                            </div>
+                        </div>
+                    </div>
+        
+               <!-- Commercial & Business Link with Nested Dropdowns -->
+        <div class="dropdown-c">
+            <a href="#" class="main-header-anchor">Commercial & Business</a>
+            <div class="dropdown-content-c">
+                <!-- Banking Section with Submenu -->
+                <div class="dropdown-section banking">
+                    <h4>Banking</h4>
+                    <div class="sub-dropdown firstpart">
+                        <div class="sub-dropdown-section-banking">
+                            <div class="bankingg">
+                                <h4><a href="">Business</a></h4>
+                            </div>
+                            <div class="bankingg">
+                                <h4><a href="">Mobile and Online Banking</a></h4>
+                            </div>
+                            <div class="bankingg">
+                                <h4><a href="">Invoicing & Payments</a></h4>
+                            </div>
+                            <div class="">
+                                <h4><a href="">Business Credit Cards</a></h4>
+                            </div>
+                          
+                        </div>
+                    </div>
                 </div>
 
-                <div class="header-search">
-                    <a href=""><img src="favicons/search.svg" alt=""></a>
+                <!-- Loan and Financing Section with Submenu -->
+                <div class="dropdown-section banking">
+                    <h4>Loan and Financing</h4>
+                    <div class="sub-dropdown">
+                        <div class="sub-dropdown-section-loan">
+                            <div class="drown-sec-con ">
+                                <h4>Business Loans</h4>
+                                <figcaption>(revenue up to $10mm)</figcaption>
+                                <li><a href="">Express Loans</a></li>
+                                <li><a href="">Pay Your Loan</a></li>
+                            </div>
+                            <div class="drown-sec-con left">
+                                <h4>Commercial Loans</h4>
+                                <figcaption>(revenue over $10mm)</figcaption>
+                                <li><a href="">Premiun Finance</a></li>
+                                <li><a href="">Assets Based Lending</a></li>
+                                <li><a href="">Community Association Loans</a></li>
+                                <li><a href="">Pay your Loans</a></li>
+                            </div>
+                            <div class="drown-sec-con left">
+                                <h4>SBA Loans</h4>
+                                <li><a href="">SBA 7(A) Loans</a></li>
+                                <li><a href="">SBA 504 Loan</a></li>
+                                <li><a href="">Our Team</a></li>
+                            </div>
+                            <div class="drown-sec-con  left">
+                                <h4>USDA Loans</h4>
+                                <li><a href="">Business & Industry Loans</a></li>
+                                <li><a href="">Renewable Energy Loans</a></li>
+                            </div>
+                            <div class="drown-sec-con  left">
+                                <h4>Specialty Financing</h4>
+                                <li><a href="">Commercial Real Estate</a></li>
+                                <li><a href="">Sponsor Finance</a></li>
+                                <li><a href="">Equipment Financing</a></li>                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treasury Management Section with Submenu -->
+                <div class="dropdown-section banking">
+                    <h4>Treasury Management</h4>
+                    <div class="sub-dropdown lastpart">
+                        <div class="sub-dropdown-section-treasury">
+                            <div class="drown-sec-con left Treasury">
+                                <h4><a href="">Treasury Management Solutions</a></h4>
+                            </div>
+                            <div class="drown-sec-con left">
+                                <h4><a href="">Merchant Services</a></h4>
+                            </div>
+                            <div class="drown-sec-con left">
+                                <h4><a href="">Fraud Risk Management</a></h4>
+                            </div>
+                            <div class="drown-sec-con left">
+                                <h4><a href="">Remote Deposit & Process Payables</a></h4>
+                            </div>
+                            <div class="drown-sec-con collection">
+                                <h4><a href="">Collection and Recievables</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <div class="dropdown">
+                        <a href="#" class="main-header-anchor">Wealth</a>
+                        <div class="dropdown-content wealth">
+                            <!-- First section with links -->
+                            <div class="dropdown-section left">
+                                <h4><a href="">Financial Planning</a></h4>
+                            </div>
+                            <!-- Second section with links -->
+                            <div class="dropdown-section left">
+                                <h4><a href="">Asset Management</a></h4>
+                            </div>
+                            <!-- Third section with links -->
+                            <div class="dropdown-section left">
+                                <h4><a href="">Trust Services</a></h4>
+                                <li><a href="">Login To Trust Reporter</a></li>
+                            </div>
+                            <!-- Fourth section with links -->
+                            <div class="dropdown-section">
+                                <h4><a href="">401K And Retirement Plans</a></h4>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <a href="#" class="open-account">Open an Account</a>
+
+                    <div class="header-search">
+                        <a href="#"><img src="ASSETS/ICONS/search.svg" alt=""></a>
+                    </div>
+                </div>
+        
+               
+            </div>
+        </div>
+        
+
+    </header>
+
+    <div class="mobile-header">
+        <div class="first-mobilehead">
+            <div class="first-mobileicon">
+                <img src="./ASSETS/ICONS/searchmobile.svg" alt="">
+            </div>
+            <div class="first-mobiletext">
+                <p>Locations</p>
+            </div>
+
+            <div class="first-mobiletext2">
+                <p tabindex="0"><span><img src="./ASSETS/ICONS/angledownmobile.svg" alt=""></span> Logins</p>
+
+                <div class="Account-logins">
+                    <div class="Account-login">
+                        <h4 class="account-login">Account-logins</h4><br>
+                    <li><a href="personal.html" class="Account-logins-li"><img src="ASSETS/ICONS/contact.svg"> Personal Banking</a></li><br>
+                    <li><a href=""class="Account-logins-li"><img src="ASSETS/ICONS/contact.svg" alt="" class="Account-logins-li"> Business Banking</a></li><br>
+                    <li><a href="" class="Account-logins-li"><img src="ASSETS/ICONS/leaf.svg" alt=""> Wealth Management</a></li><br>
+                    <hr><br>
+                    <a href="" class="Account-logins-li forgot-login">Forgot login?&nbsp;-&nbsp;Enroll</a>
+                    </div>
+    
+                    <div class="manandlady">
+                        <img src="ASSETS/IMG/Screenshot_23-11-2024_8227_www.bylinebank.com.jpeg" class="man-and-lady">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-mobilehead">
+            <div class="second-mobilelogo">
+                <img src="./ASSETS/IMG/logoHeader-BylineBank.svg" alt="">
+            </div>
+
+            <div class="second-mobilemenu">
+                <img src="./ASSETS/ICONS/hamburgermenu.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-sec1">
+        <div class="mobile-sec1img">
+            <div class="mobile-secimg1">
+                <img src="ASSETS/IMG/Screenshot_23-11-2024_8040_www.bylinebank.com.jpeg" alt="" >
+            </div>
+            <div class="mobile-secimg2">
+                <img src="ASSETS/IMG/Screenshot_23-11-2024_8127_www.bylinebank.com.jpeg" class="bank" alt="">
+            </div>
+            <div class="mobile-secimg1">
+                <img src="ASSETS/IMG/Screenshot_23-11-2024_8227_www.bylinebank.com.jpeg" class="man-and-lady">
+            </div>
+        </div>
+        <div class="paragraph-textt">
+            <p class="paragraph1">Your Neighborhood Bank</p>
+            <h1 class="headingg1">We’re next door & here for you.</h1>
+            <p class="paragraphh2">Online, on the phone, or in one of our local bank branches.We're here to <em>help you write your story.</em></p><br>
+            
+            <div class="linkbtn">
+                <ul>
+                    <li><a href="" class="open-acct-btnn"> Open an Account </a></li>
+                <li><a href="" class="local-branch-btn"> Find a Local Branch</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec1">
+        <div class="paragraph-text">
+            <p class="paragraph1">Your Neighborhood Bank</p>
+            <h1 class="heading1">We’re next door & here for you.</h1>
+            <p class="paragraph2">Online, on the phone, or in one of our local bank branches.We're here to <em>help you write your story.</em></p><br>
+            
+            <div class="linkbtn">
+                <ul>
+                    <li><a href="" class="open-acct-btn"> Open an Account </a></li>
+                <li><a href="" class="local-branch-btn"> Find a Local Branch</a></li>
+                </ul>
+            </div>
+        </div><br>
+        
+        <div class="img-div">
+
+            <div class="two-img">
+                <img src="ASSETS/IMG/Screenshot_23-11-2024_8040_www.bylinebank.com.jpeg" alt="" class="lady">
+            
+                <div class="bankk">
+                    <img src="ASSETS/IMG/Screenshot_23-11-2024_8127_www.bylinebank.com.jpeg" class="bank" alt="">
+                </div>
+            </div>
+            <div class="Account-logins">
+                <div class="Account-login">
+                    <h4 class="account-login">Account-logins</h4><br>
+                <li><a href="" class="Account-logins-li"><img src="ASSETS/ICONS/contact.svg"> Personal Banking</a></li><br>
+                <li><a href=""class="Account-logins-li"><img src="ASSETS/ICONS/briefcase.svg" alt="" class="Account-logins-li"> Business Banking</a></li><br>
+                <li><a href="" class="Account-logins-li"><img src="ASSETS/ICONS/leaf.svg" alt=""> Wealth Management</a></li><br>
+                <hr><br>
+                <a href="" class="Account-logins-li forgot-login">Forgot login?&nbsp;-&nbsp;Enroll</a>
+                </div>
+
+                <div class="manandlady">
+                    <img src="ASSETS/IMG/Screenshot_23-11-2024_8227_www.bylinebank.com.jpeg" class="man-and-lady">
+                </div>
+            </div>
+            
+
+    
+        </div>
+    </section>
+
+    <section class="sect2">
+       <div class="sec2">
+            <div class="hero-sec1">
+                <img src="./ASSETS/ICONS/clock.svg " alt="">
+                <h1 class="limited">Limited-time rates !</h1>
+            </div>
+
+            <div class="hero-sec2">
+                <div>
+                    <h4 class="time">Save more by locking in our great rates today!</h4><br>
+                    <h3 class="time">3.90% APY*</h3><br>
+                    <h4 class="month">11-month promo CD 1</h4><br>
+                    <p class="texxt">$5,000 minimum deposit to open and $5,000 balance required to earn 3.90% APY. Must be opened with new money, defined as new to Byline.</p><br>
+                    <button class="learn-more">Learn More</button><br>
+                </div>
+                <hr>
+                <div>
+                    <h3 class="time">3.90% APY*</h3><br>
+                    <h4 class="month">11-month promo CD 1</h4><br>
+                    <p class="texxt">$5,000 minimum to open account. $25,000 minimum to earn 3.25% APY. Tiered account with APY based on account balance.</p><br>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 40px;" class="offers-box">
+            <div>
+                <p class="great-offers">Other great offers:</p>
+            </div>
+            <div class="express-box">
+                    <img src="ASSETS/IMG/Screenshot_2-12-2024_14324_www.bylinebank.com.jpeg" alt="">
+                    <div class="express-loans">
+                        <h4>Express loans for Small Businesses</h4>
+                        <p>
+                            Expedited financing for businesses 2+ years old.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec3">
+        <div class="sec3-text">
+            <h1>What kind of bank does your life need?</h1>
+            <p>Whether you’re starting a family or expanding a business, you need a bank that understands you. That’s what Byline does. No matter the size of your books, we’re here to help you write your story.</p>
+        </div>
+
+        <div class="sec3-box">
+            <div class="sec3-box-child">
+                <div class="box-childimg">
+                    <img src="./ASSETS/IMG/profile-box.webp" alt="">
+                </div>
+                <div class="box-childtext">
+                    <h4>
+                        Personal Banking
+                    </h4>
+                    <p>
+                        Checking, savings, loans and more from locals who are here to help in-person or online.
+                    </p>
+                </div>
+            </div>
+            <div class="sec3-box-child">
+                <div class="box-childimg">
+                    <img src="./ASSETS/IMG/shop-box.png" alt="">
+                </div>
+                <div class="box-childtext">
+                    <h4>
+                        Business Banking
+                    </h4>
+                    <p>
+                        Dedicated business banking and not-for-profit services from local bankers invested in your success.
+                    </p>
+                </div>
+            </div>
+            <div class="sec3-box-child">
+                <div class="box-childimg">
+                    <img src="./ASSETS/IMG/checklist.webp" alt="">
+                </div>
+                <div class="box-childtext">
+                    <h4>
+                        Commercial Banking
+                    </h4>
+                    <p>
+                        Financing, banking, and treasury management services tailored to your business’ goals.
+                    </p>
+                </div>
+            </div>
+            <div class="sec3-box-child">
+                <div class="box-childimg">
+                    <img src="./ASSETS/IMG/flower.webp" alt="">
+                </div>
+                <div class="box-childtext">
+                    <h4>
+                        Wealth Management
+                    </h4>
+                    <p>
+                        Protect what you’ve earned, grow your wealth and build your legacy for the next generation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sect2-bg">
+        <div class="sec2">
+             <div class="hero-sec1-bg">
+                 <img src="./ASSETS/IMG/Screenshot_3-12-2024_7649_www.bylinebank.com.jpeg" alt="">
+             </div>
+ 
+             <div class="hero-sec2-bg">
+                 <div>
+                     <p class="the-news">In the News</p><br>
+                     <h4 class="month">Byline Bank Named a 2024 Best Workplace in Illinois and Chicago</h4><br>
+                     <p class="texxt">Chicago Sun-Times has named Byline Bank one of Chicago’s Best Workplaces for 2024, ranking the bank as one of the top 25 workplaces in the city and 6th among large companies.</p><br>
+                     <button class="learn-more-bg">Learn More</button><br>
+                 </div>
+             </div>
+         </div>
+    </section>
+
+    <section class="sec4">
+        <div class="sec4-text">
+            <h1>Latest Insights</h1>
+        </div>
+        <div class="sec4-boxes">
+            <div class="sec4-box1">
+                <div class="sec4-box1-img">
+                    <img src="ASSETS/IMG/laptop.jpeg" alt="">
+                </div>
+
+                <div class="sec4-box1-text">
+                    <p>
+                        Fraud Prevention
+
+                    </p>
+                    <h1>
+                        Holiday Fraud Prevention Tips
+                    </h1>
+                </div>
+            </div>
+            <div class="sec4-box1">
+                <div class="sec4-box1-img">
+                    <img src="ASSETS/IMG/merlin.jpg" alt="">
+                </div>
+
+                <div class="sec4-box1-text">
+                    <p>
+                        Cybersecurity
+                    </p>
+                    <h1>
+                        Take a Bite out of Cybercrime: Proven Strategies to Protect Yourself and Your Business
+                        Cybersecurity
+                    </h1>
+                </div>
+            </div>
+            <div class="sec4-box1">
+                <div class="sec4-box1-img">
+                    <img src="ASSETS/IMG/cookie.jpeg" alt="">
+                </div>
+
+                <div class="sec4-box1-text">
+                    <p>
+                        Business Planning
+                    </p>
+                    <h1>
+                       
+                        Navigating the Unique Financing Needs of Franchise Businesses as Growth Continues in 2024
+                    </h1>
+                </div>
+            </div>
+            <div class="sec4-box1">
+                <div class="sec4-box1-img">
+                    <img src="ASSETS/IMG/calc.jpeg" alt="">
+                </div>
+
+                <div class="sec4-box1-text">
+                    <p>
+                        Personal Finances
+                    </p>
+                    <h1>
+                        
+                        How To Pay Off Debt and Save for Key Priorities as Costs Continue to Rise
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec5">
+        <div class="sec5-gif">
+            <p class="b-text">
+                Better Together
+            </p>
+            <img src="/ASSETS/IMG/CTA-Animated.webp" alt="">
+            <p class="b-text">
+                Byline Bank
+            </p>
+        </div>
+        <div class="sec5-text">
+            <h1>
+                Open an account today and write your story.
+            </h1>
+            <p>
+                Byline Bank is here to support you…in your neighborhood and across the nation.
+            </p>
+            <button>
+                Open an Account
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer-divs">
+            <div class="footer-divs1">
+                <div class="footer-div1">
+                    <img src="ASSETS/IMG/logoFooter.svg" class="footer-logo" alt="">
+                    <ul>
+                        <li><img src="" alt="">Locations and ATMs</li>
+                        <li><img src="" alt="">Login</li>
+                    </ul>
+                </div>
+                <div class="footer-div2">
+                    <p class="footer-div2-p">
+                        Help and Support <img src="ASSETS/ICONS/arrowright.svg" class="immg" alt="">
+                    </p>
+                    <div class="footer-div2-ul">
+                        <p>Online Banking Help</p>
+                        <p>Reorder Checks</p>
+                        <p>Lost or Stolen Card</p>
+                        <p>Fraud Prevention & Security</p>
+                        <p>Insights</p>
+                        <p>Newsletters</p>
+                        <p>Contact Us</p>
+                    </div>
+                </div>
+                <div class="footer-div2">
+                    <p class="footer-div2-p">
+                        About Us<img src="ASSETS/ICONS/arrowright.svg" class="immg" alt="">
+                    </p>
+                    <div class="footer-div2-ul">
+                        <p>In the Community</p>
+                        <p>Sustainability</p>
+                        <p>Diversity, Equity, and Inclusion</p>
+                        <p>Leadership</p>
+                        <p>News</p>
+                        <p>Careers</p>
+                    </div>
+                </div>
+                <div class="footer-div2">
+                    <p class="footer-div2-p">
+                        Services<img src="ASSETS/ICONS/arrowright.svg" class="immg" alt="">
+                    </p>
+                    <div class="footer-div2-ul">
+                        <p>Personal Banking</p>
+                        <p>Small Business Banking</p>
+                        <p>Commercial Banking</p>
+                        <p>Wealth Management</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sitemap-con">
+                <div class="sitemap-conchild">
+                    <img src="ASSETS/IMG/LenderLogo.svg" width="60px" height="50px" alt="">
+                    <p class="call-us"> Contact Us or call (773) 244-7000</p>
+                    <ul class="sitemap-ul">
+                        <li> Sitemap</li>
+                        <li>Disclosures</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy</li>
+                    </ul>
+                </div>
+                <div class="socialss-con">
+                   <div class="socialss-conchild">
+                    <img src="./ASSETS/ICONS/instagram.svg" alt="">
+                    <img src="./ASSETS/ICONS/linkedin.svg" alt="">
+                    <img src="./ASSETS/ICONS/facebook.svg" alt="">
+                   </div>
+                    <p class="relations">Investor relations<img src="" alt=""></p>
                 </div>
             </div>
 
-        </div>
-
-    </header>
+        </footer>
 </body>
 </html>
